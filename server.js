@@ -23,6 +23,8 @@ app.get("/", function(req, res) {
     res.render('harid');
 });
 
+
+
 // app.get("/hello", function(req, res) {
 //   res.end(`<h1>HELLO WORLD by Omadbek</h1>`);
 // });

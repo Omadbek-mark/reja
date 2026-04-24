@@ -1,20 +1,27 @@
 {
-  "name": "Steve",
+  "name": "Mark",
   "profession": "Software Engineer",
-  "age": 20,
-  "residence": "S.Korea",
+  "age": 22,
+  "residence": "Uzbekistan",
   "adress": "S.Korea, Busan",
-  "languages": ["Uzbek", "Korean", "English"],
-  "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
-  "extra_skills": [
-    "Bootstrap",
-    "Materialize",
-    "Styling",
-    "Sass",
-    "Django",
-    "Flask",
-    "GIT Knowledge"
+  "languages": [
+    { "name": "Uzbek", "level": "100%" },
+    { "name": "English", "level": "80%" },
+    { "name": "Korean", "level": "60%" }
   ],
+  "skills": [
+    { "name": "Html", "level": "90%" },
+    { "name": "CSS", "level": "85%" },
+    { "name": "Js", "level": "80%" },
+    { "name": "PHP", "level": "75%" },
+    { "name": "WordPress", "level": "85%" }
+  ],
+  "extra_skills": [
+    "Bootstrap, Materialize",
+    "Stylus, Sass, Less",
+    "Gulp, Webpack, Grunt",
+    "GIT Knowledge"
+],
   "work_place": "IT Company",
   "service_desc": "Amet minimo molit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat",
   "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis.",

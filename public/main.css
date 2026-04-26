@@ -12,7 +12,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   width: 1440px;
   height: 1312px;
   margin-top: 2px;
@@ -25,21 +25,11 @@
   height: 1315px;
   background-color: white;
   display: flex;
+  flex: 0 0 300px;
   flex-direction: column;
 }
 
-.main_frame .right_frame {
-  position: relative;
-  width: 108px;
-  height: 1315px;
-  background-color: white;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.left-1 {
+.left_frame .left-1 {
   position: relative;
   width: 228px;
   height: 267px;
@@ -51,7 +41,7 @@
   align-items: center;
 }
 
-.left-1-1 {
+.left_frame .left-1-1 {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -60,50 +50,7 @@
   margin-bottom: 29.46px;
 }
 
-.profile-pic {
-  border-radius: 90%;
-}
-
-.marginer {
-  position: relative;
-  width: 220px;
-  height: 0px;
-  margin-left: 40px;
-  margin-bottom: 25px;
-  margin-top: 39px;
-
-  border: 1.5px solid #f0f0f6;
-}
-
-.left-2 {
-  position: relative;
-  width: 221px;
-  height: 126px;
-  margin-left: 44px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 0;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.info-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.info-item span:first-child {
-  background: #ffb400;
-  padding: 2px 5px;
-}
-
-.available {
-  color: lightgreen;
-}
-
-.left-1-2 {
+.left_frame .left-1-2 {
   position: relative;
   width: 64px;
   height: 20.85px;
@@ -115,18 +62,22 @@
   font-family: sans-serif;
   font-style: normal;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 123.6%;
   justify-content: center;
   align-items: left;
   text-transform: capitalize;
-  color: #767676;
+  color: #302e2e;
   font-feature-settings:
     "calt" off,
     "kern" off;
 }
 
-.left-icons {
+.left-1-3 {
+  font-weight: bold;
+}
+
+.left_frame .left-icons {
   position: relative;
   display: flex;
   align-items: center;
@@ -136,12 +87,7 @@
   margin-top: 19px;
 }
 
-.link_href {
-  text-decoration: none;
-  color: black;
-}
-
-.icon {
+.left_frame .icon {
   position: relative;
   width: 24.99px;
   height: 22.8px;
@@ -150,82 +96,117 @@
   background: #ffb400;
 }
 
-.icon-1 {
+.left_frame .icon-1 {
   position: relative;
 }
 
-.left-3 {
+.left_frame .profile-pic {
+  border-radius: 90%;
+}
+
+.marginer {
+  position: relative;
+  width: 220px;
+  height: 0px;
+  margin-left: 40px;
+  margin-top: 39px;
+  border: 1.5px solid #f0f0f6;
+}
+
+.left_frame .left-2 {
+  position: relative;
+  width: 221px;
+  height: 126px;
+  margin-top: 25px;
+  margin-left: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-2 .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.left-2 .info span:first-child {
+  background: #ffb400;
+  padding: 2px 5px;
+}
+
+.left_frame .available {
+  color: lightgreen;
+}
+
+.left_frame .left-3 {
   position: relative;
   width: 220px;
   height: 153px;
-  margin-top: 25px;
   margin-left: 45px;
+  margin-bottom: 25px;
 }
 
-.language-item {
+.left-3 .language {
   margin-bottom: 15px;
 }
 
-/* Ism va Foizni bir qatorga terish */
-.lang-info {
+.left-3 .lang-info {
   display: flex;
-  justify-content: space-between; /* Ism chapda, foiz o'ngda */
+  justify-content: space-between;
   margin-bottom: 8px;
 }
 
-.lang-name,
-.lang-percentage {
-  color: #767676; /* Kulrang matn */
+.left-3 .lang-name,
+.lang-per {
+  color: #767676;
   font-size: 15px;
   font-family: sans-serif;
 }
 
-/* Progress bar asosi */
-.progress-bar-wrapper {
+.left-3 .progress-bar-wrapper {
   width: 100%;
-  height: 4px; /* Ingichka chiziq */
-  background-color: #ffffff; /* Orqa fon oq yoki och kulrang */
-  border: 1px solid #ffb400; /* Cheti sariq chiziq (rasmdagidek) */
+  height: 4px;
+
+  border: 1px solid #ffb400;
   border-radius: 10px;
-  padding: 2px; /* Ichki bo'shliq to'ldiruvchi uchun */
+  padding: 2px;
   display: flex;
   align-items: center;
 }
 
-/* To'ladigan qismi */
-.progress-fill {
+.left-3 .progress-fill {
   height: 2px;
-  background-color: #ffb400; /* Asosiy sariq rang */
+  background-color: #ffb400;
   border-radius: 10px;
   transition: width 0.5s ease-in-out;
 }
-.left-4 {
+.left_frame .left-4 {
   position: relative;
   width: 220px;
   height: 252px;
-  margin-top: 25px;
   margin-left: 45px;
+  margin-bottom: 35px;
 }
 
-.skill-item {
-  margin-bottom: 20px;
+.left-4 .skill-item {
+  margin-bottom: 15px;
 }
 
-.skill-info {
+.left-4 .skill-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-/* Matn rangi - rasmda biroz kulrangroq */
-.text-muted {
+.left-4 .text-muted {
   color: #767676;
-  font-family: "Inter", sans-serif; /* Agar bo'lsa */
+  font-family: "Inter", sans-serif;
   font-size: 15px;
 }
 
-/* Progress bar asosi (Oq fon va sariq border) */
-.progress-bar-wrapper {
+.left-4 .progress-bar-wrapper {
   width: 100%;
   height: 4px;
   background-color: #fff;
@@ -233,72 +214,61 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 1px; /* To'ldiruvchi chiziq biroz ichkarida turishi uchun */
+  padding: 1px;
 }
 
-/* Sariq to'ladigan qism */
-.progress-fill {
+.left-4 .progress-fill {
   height: 2px;
   background-color: #ffb400;
   border-radius: 10px;
-  transition: width 1s ease-in-out; /* Yuklanganda chiroyli chiqishi uchun */
+  transition: width 1s ease-in-out;
 }
 
-.left-5 {
+.left_frame .left-5 {
   position: relative;
   width: 186px;
   height: 148px;
-  margin-top: 25px;
   margin-left: 45px;
 }
 
-.extra-skills-container {
-  padding: 20px 0;
-  border-top: 1px solid #f0f0f6; /* Tepasidagi chiziq */
-  border-bottom: 1px solid #f0f0f6; /* Pastidagi chiziq */
-}
-
-.extra-skills-container h3 {
-  margin-bottom: 20px;
+.left-5 .extra-skills-container h3 {
   font-size: 18px;
   color: #2b2b2b;
 }
 
-.extra-skill-item {
+.left-5 .extra-skill-item {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
 
-/* Ikonka yasash qismi */
-.custom-icon {
+.left-5 .custom-icon {
   position: relative;
   width: 18px;
   height: 18px;
   margin-right: 15px;
 }
 
-.rect-1,
+.left-5 .rect-1,
 .rect-2 {
   position: absolute;
   width: 10px;
   height: 10px;
-  border: 2px solid #ffb400; /* Sariq ramka */
+  border: 2px solid #ffb400;
   background-color: transparent;
 }
 
-.rect-1 {
+.left-5 .rect-1 {
   top: 0;
   left: 0;
 }
 
-.rect-2 {
+.left-5 .rect-2 {
   bottom: 0;
   right: 0;
 }
 
-/* Matn stili */
-.skill-text {
+.left-5 .skill-text {
   color: #767676;
   font-size: 15px;
   font-family: sans-serif;
@@ -314,15 +284,81 @@
   flex-direction: column;
 }
 
-.intro {
-  background-color: white;
-  width: 971px;
-  height: 454.33px;
+.about-hero {
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 30px;
+  padding-left: 70px;
+  border-radius: 4px;
+  position: relative;
+  width: 850px;
+  min-height: 350px;
+}
+
+.desc-hero {
+  flex: 1;
+}
+
+.desc-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2b2b2b;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.desc-hero p {
+  font-size: 16px;
+  color: #767676;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  right: 60px;
+
+  height: 100%;
+}
+
+.hero-image img {
+  width: 250px;
+  height: 370px;
+  z-index: 1;
+  display: block;
+  align-self: flex-end;
+}
+
+.hire-btn {
+  background-color: #ffb400;
+  color: #2b2b2b;
+  border: none;
+  padding: 15px 35px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background-color: #e5a200;
 }
 
 .services-section {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 150px auto;
   text-align: center;
 }
 
@@ -334,18 +370,15 @@
 
 .header-content p {
   color: #666;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   line-height: 1.6;
 }
 
-/* Grid Layout */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 16px;
 }
 
-/* Individual Card Styling */
 .service-card {
   background: #ffffff;
   padding: 40px 40px;
@@ -354,7 +387,10 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  margin: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .service-card:hover {
@@ -372,7 +408,6 @@
   font-size: 0.9rem;
 }
 
-/* Special Styling for Advertising Card */
 .advertising {
   text-align: center;
   padding: 40px 20px;
@@ -393,4 +428,45 @@
 
 .order-btn:hover {
   text-decoration: underline;
+}
+
+.main_frame .right_frame {
+  position: relative;
+  width: 108px;
+  height: 1315px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right_frame .switch_btn {
+  margin-top: 50px;
+  border: none;
+}
+
+.home_btn_container {
+  text-align: center;
+}
+
+.right_frame .menu_btns_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 493px;
+  margin-top: 174px;
+}
+
+.menu_btn {
+  border-radius: 50%;
+  border: #e1dcdc;
+  width: 40px;
+  height: 40px;
+}
+
+.menu_btn:hover {
+  background-color: #e2a61c;
+  cursor: pointer;
 }

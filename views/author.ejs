@@ -16,62 +16,66 @@
         <div class="left-1">
           <div class="left-1-1">
             <img class="profile-pic"
-             src="images/profile_pic.jpg"
-             width="156px"
-             height="150px"
-             alt="">
+                src="images/profile_pic.jpg"
+                width="156px"
+                height="150px"
+                alt="">
           </div>
           <div class="left-1-2"><%= user.name%></div>
           <div class="left-1-3"><%= user.profession%></div>
           <div class="left-icons">
-            <a class="link_href" href="">
+            <a href="#">
               <div class="icon">
                 <img src="icon/Facebook.svg" class="icon-1" />
               </div>
             </a>
-            <a class="link_href" href="">
+            <a href="#">
                 <div class="icon">
                     <img src="icon/Instagram.svg" class="icon-1" />
                 </div>
             </a>
-             <a class="link_href" href="">
+
+             <a href="#">
               <div class="icon">
                 <img src="icon/Twitter.svg" class="icon-1" />
               </div>
             </a>
-            <a class="link_href" href="">
+            
+            <a href="#">
                 <div class="icon">
                     <img src="icon/Linkeding.svg" class="icon-1" />
                 </div>
             </a>
-            <a class="link_href" href="">
+            <a href="#">
               <div class="icon">
                 <img src="icon/Youtube.svg" class="icon-1" />
               </div>
             </a>
             
-           
           </div>
         </div>
         <div class="marginer"></div>
+
         <div class="left-2">
-          <div class="info-item"><span>Age:</span><%= user.age%></div>
-          <div class="info-item"><span>Residence:</span><%= user.residence%></div>
-          <div class="info-item"><span>Freelance:</span> <span class="available">Available</span></div>
-          <div class="info-item"><span>Address:</span><%= user.adress%></div>
+          <div class="info"><span>Age:</span><%= user.age%></div>
+          <div class="info"><span>Residence:</span><%= user.residence%></div>
+          <div class="info"><span>Freelance:</span> <span class="available">Available</span></div>
+          <div class="info"><span>Address:</span><%= user.adress%></div>
         </div>
-        <div class="marginer"></div>
+
+         <div class="marginer"></div>
+
         <div class="left-3">
             <h3>Languages</h3>
             
             <% user.languages.forEach(function(lang) { %>
-                <div class="language-item">
+                <div class="language">
                     <div class="lang-info">
                         <span class="lang-name"><%= lang.name %></span>
-                        <span class="lang-percentage"><%= lang.level %></span>
+                        <span class="lang-per"><%= lang.level %></span>
                     </div>
                     <div class="progress-bar-wrapper">
-                      <div class="progress-fill" style="width:  <%= lang.level %>";></div>
+                      <div class="progress-fill" style="width: <%= lang.level %>"></div>
                     </div>
                 </div>
             <% }); %>
@@ -79,7 +83,7 @@
         <div class="marginer"></div>
         <div class="left-4">
             <h3>Skills</h3>
-            
+
             <% user.skills.forEach(function(skill) { %>
                 <div class="skill-item">
                     <div class="skill-info">
@@ -87,7 +91,7 @@
                         <span class="skill-percentage text-muted"><%= skill.level %></span>
                     </div>
                     <div class="progress-bar-wrapper">
-                        <div class="progress-fill" style="width: <%= skill.level %>";></div>
+                        <div class="progress-fill" style="width: <%= skill.level %>"></div>
                     </div>
                 </div>
             <% }); %>
@@ -108,14 +112,27 @@
               <% }); %>
           </div>
         </div>
-        <div class="marginer"></div>
+       <div class="marginer"></div>
       </div>
        <div class="midd-frame">
-           <div class="intro">
-            <h1 class="Doctor"></h1>
-            <p></p>
-            <button class="hire-btn"></button>
-           </div>
+           <section class="about-hero">
+              <div class="desc-hero">
+                <h1>Learning IT skills <br> at Devex Academy
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Et, volutpat feugiat placerat lobortis. Natoque rutrum 
+                  semper sed suspendisse nunc lectus.
+                </p>
+                <button class="hire-btn">HIRE ME</button>
+              </div>
+
+              <div class="hero-image">
+                <img src="images/photo_mark.jpg" alt="">
+                <span class="shape circle-orange"></span>
+                <span class="shape triangle-red"></span>
+              </div>
+           </section>
 
            <section class="services-section">
                 <div class="header-content">
@@ -127,32 +144,32 @@
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <img class="web-icon" src="icon/Icons_coding.svg" alt="">
+                        <img class="web-icon" src="menu-icons/Icons_coding.svg" alt="">
                         <h3>Web Development</h3>
                         <p>Blog, E-Commerce</p>
                     </div>
 
                     <div class="service-card">   
-                            <img class="web-icon" src="icon/Icons_Illustration.png" alt="">
+                            <img class="web-icon" src="menu-icons/Icons_Illustration.png" alt="">
                         <h3>UI/UX Design</h3>
                         <p>Mobile App, Website Design</p>
                     </div>
 
                     <div class="service-card">
-                           <img class="web-icon" src="icon/Icons_Microphone.png" alt="">
+                           <img class="web-icon" src="menu-icons/Icons_Microphone.png" alt="">
 
                         <h3>Sound Design</h3>
                         <p>Voice Over, Beat Making</p>
                     </div>
 
                     <div class="service-card">
-                        <img class="web-icon" src="icon/Icons_game-development.png" alt="">
+                        <img class="web-icon" src="menu-icons/Icons_game-development.png" alt="">
                         <h3>Game Design</h3>
                         <p>Character Design, Props & Objects</p>
                     </div>
 
                     <div class="service-card">
-                         <img class="web-icon" src="icon/Icons_Photographer.png" alt="">
+                         <img class="web-icon" src="menu-icons/Icons_Photographer.png" alt="">
                       <h3>Photography</h3>
                       <p>Portrait, Product Photography</p>
                     </div>
@@ -165,7 +182,19 @@
                 </div>
             </section>
         </div>
-      <div class="right_frame"></div>
+      <div class="right_frame">
+        <button class="switch_btn"><img src="btn_icon/Icons_Contrast.png" width="30px" height="30px"></button>
+        <div class="menu_btns_container">
+          <div class="home_btn_container">
+            <img src="btn_icon/Pop up.png" width="65px" height="33px">
+            <button class="menu_btn"><img src="btn_icon/Icons_Home.svg"></button>
+          </div>
+          <button class="menu_btn"><img src="btn_icon/file-code.png"></button>
+          <button class="menu_btn"><img src="btn_icon/Icons_cv.png"></button>
+          <button class="menu_btn"><img src="btn_icon/Vector.png"></button>
+          <button class="menu_btn"><img src="btn_icon/Icons_Blog.png"></button>
+          <button class="menu_btn"><img src="btn_icon/Icons_Contact.png"></button>
+      </div>
 
     </div>
   </div>

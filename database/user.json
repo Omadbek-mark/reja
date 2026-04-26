@@ -13,8 +13,8 @@
     { "name": "Html", "level": "90%" },
     { "name": "CSS", "level": "85%" },
     { "name": "Js", "level": "80%" },
-    { "name": "PHP", "level": "75%" },
-    { "name": "WordPress", "level": "85%" }
+    { "name": "NodeJS", "level": "75%" },
+    { "name": "Pyhton", "level": "85%" }
   ],
   "extra_skills": [
     "Bootstrap, Materialize",

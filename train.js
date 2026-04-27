@@ -1,3 +1,34 @@
+// TASK B
+
+function countDigits(num) {
+  let count = 0;
+
+  for(let ele of num) {
+    if(ele >= '0' && ele <= '9') {
+      count++
+    }   
+  }
+  return count;
+}
+
+const result1 = countDigits("8ey65fd9a1tdh7s4d3");
+console.log(result1);
+
+// TASK A
+function countLetter(letter, word){
+  let count = 0;
+
+  for(let char of word) {
+    if(char === letter) {
+      count++
+    }
+  }
+  return count;
+}
+const result = countLetter("a", "real madrid");
+console.log(result);
+
+
 // console.log("Jack Ma Maslahatlari");
 // const list = [
 //   "yaxshi talaba boling", // 0-20
@@ -74,15 +105,3 @@
 // }
 // run();
 
-function countLetter(letter, word){
-  let count = 0;
-
-  for(let char of word) {
-    if(char === letter) {
-      count++
-    }
-  }
-  return count;
-}
-const result = countLetter("a", "real madrid");
-console.log(result);

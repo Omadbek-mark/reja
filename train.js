@@ -1,32 +1,66 @@
-// TASK B
-
-function countDigits(num) {
-  let count = 0;
-
-  for(let ele of num) {
-    if(ele >= '0' && ele <= '9') {
-      count++
-    }   
+// TASK C
+class Shop {
+  constructor(a, b, c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
   }
-  return count;
+
+  qoldiq(time) {
+    console.log(`Hozir ${time} da ${this.a}ta Iphone, ${this.b}ta Xiaomi va ${this.c}ta Samsung mavjud!`)
+  };
+  sotish(product, amount) {
+    if (product === "Iphone") {
+      this.a -= amount
+
+      console.log(`${product} sotish: ${amount}`);
+    };
+  };
+  qabul(product, amount) {
+    if (product === "Samsung") {
+      this.c += amount
+      console.log(`${product} qabul: ${amount}`);
+    };
+  };
+  
 }
 
-const result1 = countDigits("8ey65fd9a1tdh7s4d3");
-console.log(result1);
+const shop = new Shop(4, 5, 2);
+shop.qoldiq("20:40"); 
+shop.sotish("Iphone", 3);
+shop.qabul("Samsung", 4);
+shop.qoldiq("20:50"); 
 
-// TASK A
-function countLetter(letter, word){
-  let count = 0;
 
-  for(let char of word) {
-    if(char === letter) {
-      count++
-    }
-  }
-  return count;
-}
-const result = countLetter("a", "real madrid");
-console.log(result);
+// // TASK B
+
+// function countDigits(num) {
+//   let count = 0;
+
+//   for(let ele of num) {
+//     if(ele >= '0' && ele <= '9') {
+//       count++
+//     }   
+//   }
+//   return count;
+// }
+
+// const result1 = countDigits("8ey65fd9a1tdh7s4d3");
+// console.log(result1);
+
+// // TASK A
+// function countLetter(letter, word){
+//   let count = 0;
+
+//   for(let char of word) {
+//     if(char === letter) {
+//       count++
+//     }
+//   }
+//   return count;
+// }
+// const result = countLetter("a", "real madrid");
+// console.log(result);
 
 
 // console.log("Jack Ma Maslahatlari");

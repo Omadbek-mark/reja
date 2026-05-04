@@ -1,35 +1,60 @@
-// TASK C
-class Shop {
-  constructor(a, b, c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
+// TASK D
+function checkContent( a, b ) {
+  if(a.length !== b.length) {
+    return false;
   }
 
-  qoldiq(time) {
-    console.log(`Hozir ${time} da ${this.a}ta Iphone, ${this.b}ta Xiaomi va ${this.c}ta Samsung mavjud!`)
-  };
-  sotish(product, amount) {
-    if (product === "Iphone") {
-      this.a -= amount
+let ele1 = a.split("");
+let ele2 = b.split("");
 
-      console.log(`${product} sotish: ${amount}`);
-    };
-  };
-  qabul(product, amount) {
-    if (product === "Samsung") {
-      this.c += amount
-      console.log(`${product} qabul: ${amount}`);
-    };
-  };
-  
+ele1.sort();
+ele2.sort();
+
+let el1 = ele1.join("");
+let el2 = ele2.join("");
+
+return el1 === el2;
 }
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq("20:40"); 
-shop.sotish("Iphone", 3);
-shop.qabul("Samsung", 4);
-shop.qoldiq("20:50"); 
+const result = checkContent("computer", "putcomer");
+console.log(result);
+
+const result1 = checkContent("omadbek", "mark");
+console.log(result1);
+
+
+// TASK C
+// class Shop {
+//   constructor(a, b, c) {
+//     this.a = a;
+//     this.b = b;
+//     this.c = c;
+//   }
+
+//   qoldiq(time) {
+//     console.log(`Hozir ${time} da ${this.a}ta Iphone, ${this.b}ta Xiaomi va ${this.c}ta Samsung mavjud!`)
+//   };
+//   sotish(product, amount) {
+//     if (product === "Iphone") {
+//       this.a -= amount
+
+//       console.log(`${product} sotish: ${amount}`);
+//     };
+//   };
+//   qabul(product, amount) {
+//     if (product === "Samsung") {
+//       this.c += amount
+//       console.log(`${product} qabul: ${amount}`);
+//     };
+//   };
+  
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq("20:40"); 
+// shop.sotish("Iphone", 3);
+// shop.qabul("Samsung", 4);
+// shop.qoldiq("20:50"); 
 
 
 // // TASK B

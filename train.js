@@ -1,26 +1,40 @@
-// TASK D
-function checkContent( a, b ) {
-  if(a.length !== b.length) {
-    return false;
-  }
+// TASK E
+function getReverse(ele) {
+  let ele1 = ele.split("");
 
-let ele1 = a.split("");
-let ele2 = b.split("");
+  ele1.reverse();
 
-ele1.sort();
-ele2.sort();
+  let el1 = ele1.join(""); 
 
-let el1 = ele1.join("");
-let el2 = ele2.join("");
-
-return el1 === el2;
+  return el1;
 }
 
-const result = checkContent("computer", "putcomer");
+const result = getReverse("mexanizatsiyalashtirilmaganligidandir");
 console.log(result);
 
-const result1 = checkContent("omadbek", "mark");
-console.log(result1);
+// TASK D
+// function checkContent( a, b ) {
+//   if(a.length !== b.length) {
+//     return false;
+//   }
+
+// let ele1 = a.split("");
+// let ele2 = b.split("");
+
+// ele1.sort();
+// ele2.sort();
+
+// let el1 = ele1.join("");
+// let el2 = ele2.join("");
+
+// return el1 === el2;
+// }
+
+// const result = checkContent("computer", "putcomer");
+// console.log(result);
+
+// const result1 = checkContent("omadbek", "mark");
+// console.log(result1);
 
 
 // TASK C

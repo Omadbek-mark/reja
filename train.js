@@ -1,16 +1,38 @@
-// TASK E
-function getReverse(ele) {
-  let ele1 = ele.split("");
+// TASK F
+function findDoublers(a) {
+  let b = a.split("");
+  let seenLetter = [];
 
-  ele1.reverse();
+  for (let i = 0; i < b.length; i++) {
+    if (seenLetter.includes(b[i])) {
+      return true;
+    } else {
+      seenLetter.push(b[i]);
+    }
 
-  let el1 = ele1.join(""); 
+  };
 
-  return el1;
+  return false;
 }
 
-const result = getReverse("mexanizatsiyalashtirilmaganligidandir");
+const result = findDoublers("football")
 console.log(result);
+const result1 = findDoublers("golf")
+console.log(result1);
+
+// TASK E
+// function getReverse(ele) {
+//   let ele1 = ele.split("");
+
+//   ele1.reverse();
+
+//   let el1 = ele1.join(""); 
+
+//   return el1;
+// }
+
+// const result = getReverse("mexanizatsiyalashtirilmaganligidandir");
+// console.log(result);
 
 // TASK D
 // function checkContent( a, b ) {

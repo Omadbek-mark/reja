@@ -1,24 +1,43 @@
-// TASK F
-function findDoublers(a) {
-  let b = a.split("");
-  let seenLetter = [];
+// TASK G
+function getHighestIndex(arr) {
+  let max = arr[0];
+  let index = 0;
 
-  for (let i = 0; i < b.length; i++) {
-    if (seenLetter.includes(b[i])) {
-      return true;
-    } else {
-      seenLetter.push(b[i]);
-    }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i]
+      index = i
+    } 
+  }
 
-  };
-
-  return false;
+  return index;
 }
 
-const result = findDoublers("football")
-console.log(result);
-const result1 = findDoublers("golf")
-console.log(result1);
+const result = getHighestIndex([7, 15, 22, 17, 22]);
+console.log("result:", result);
+
+
+// TASK F
+// function findDoublers(a) {
+//   let b = a.split("");
+//   let seenLetter = [];
+
+//   for (let i = 0; i < b.length; i++) {
+//     if (seenLetter.includes(b[i])) {
+//       return true;
+//     } else {
+//       seenLetter.push(b[i]);
+//     }
+
+//   };
+
+//   return false;
+// }
+
+// const result = findDoublers("football")
+// console.log(result);
+// const result1 = findDoublers("golf")
+// console.log(result1);
 
 // TASK E
 // function getReverse(ele) {

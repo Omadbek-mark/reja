@@ -1,19 +1,48 @@
-// TASK H
-function getPositive(arr) {
-  let numPositive = "";
+// TASK I
+function majorityElement(arr) {
+  let ele = {};
+  let maxCount = 0;
+  let result = 0;
+
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
-      numPositive = numPositive + arr[i]
+    if (ele[arr[i]] ) {
+      ele[arr[i]]++;
+    } else {
+      ele[arr[i]] = 1;
     }
+  };
+
+  for (let key in ele) {
+    if (ele[key] > maxCount) {
+      maxCount = ele[key];
+      result = key;
+    } 
   }
 
-
-  return numPositive;
+  return result;
 }
 
-const result = getPositive([1, -7, 5]);
-console.log("result:", result);
+const result = majorityElement([1, 5, 2, 5, 7, 4, 8, 5]);
+console.log(result);
+
+
+// TASK H
+// function getPositive(arr) {
+//   let numPositive = "";
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       numPositive = numPositive + arr[i]
+//     }
+//   }
+
+
+//   return numPositive;
+// }
+
+// const result = getPositive([1, -7, 5]);
+// console.log("result:", result);
 
 
 // TASK G

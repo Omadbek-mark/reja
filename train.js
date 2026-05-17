@@ -1,30 +1,47 @@
-// TASK I
-function majorityElement(arr) {
-  let ele = {};
-  let maxCount = 0;
-  let result = 0;
+// TASK J
+function findLongestWord(sentence) {
+  let words = sentence.split(" ");
+  let longestWord = "";
 
-
-  for (let i = 0; i < arr.length; i++) {
-    if (ele[arr[i]] ) {
-      ele[arr[i]]++;
-    } else {
-      ele[arr[i]] = 1;
-    }
-  };
-
-  for (let key in ele) {
-    if (ele[key] > maxCount) {
-      maxCount = ele[key];
-      result = key;
-    } 
+  for (let word of words) {
+    if (word.length > longestWord.length)
+      longestWord = word;
   }
 
-  return result;
+  return longestWord;
 }
 
-const result = majorityElement([1, 5, 2, 5, 7, 4, 8, 5]);
-console.log(result);
+const result = findLongestWord("My hobby is playing football");
+console.log("the longest word is:", result);
+
+
+// TASK I
+// function majorityElement(arr) {
+//   let ele = {};
+//   let maxCount = 0;
+//   let result = 0;
+
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (ele[arr[i]] ) {
+//       ele[arr[i]]++;
+//     } else {
+//       ele[arr[i]] = 1;
+//     }
+//   };
+
+//   for (let key in ele) {
+//     if (ele[key] > maxCount) {
+//       maxCount = ele[key];
+//       result = key;
+//     } 
+//   }
+
+//   return result;
+// }
+
+// const result = majorityElement([1, 5, 2, 5, 7, 4, 8, 5]);
+// console.log(result);
 
 
 // TASK H
